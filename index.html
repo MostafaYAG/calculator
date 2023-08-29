@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="res-show">
+            <span id="res-text">0</span>
+        </div>
+        <div class="buttons">
+            <div class="line">
+                <button class="btn" id="clear" onclick="clear_all()">C</button>
+                <button class="btn" onclick="remove_digit()">←</button>
+                <button class="btn" onclick="divide()">÷</button>
+                <div class="clear"></div>
+            </div>
+            <div class="line">
+                <button class="btn" onclick="add_digit('7')">7</button>
+                <button class="btn" onclick="add_digit('8')">8</button>
+                <button class="btn" onclick="add_digit('9')">9</button>
+                <button class="btn" onclick="times()">×</button>
+                <div class="clear"></div>
+            </div>
+            <div class="line">
+                <button class="btn" onclick="add_digit('4')">4</button>
+                <button class="btn" onclick="add_digit('5')">5</button>
+                <button class="btn" onclick="add_digit('6')">6</button>
+                <button class="btn" onclick="sum()">+</button>
+                <div class="clear"></div>
+            </div>
+            <div class="line">
+                <button class="btn" onclick="add_digit('1')">1</button>
+                <button class="btn" onclick="add_digit('2')">2</button>
+                <button class="btn" onclick="add_digit('3')">3</button>
+                <button class="btn" onclick="sub()">-</button>
+                <div class="clear"></div>
+            </div>
+            <div class="line">
+                <button class="btn" onclick="change_sign()">+/-</button>
+                <button class="btn" onclick="add_digit('0')">0</button>
+                <button class="btn" onclick="decimal()">.</button>
+                <button class="btn" id="equal" onclick="equation_answer()">=</button>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
